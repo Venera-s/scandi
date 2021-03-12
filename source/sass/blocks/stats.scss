@@ -1,0 +1,28 @@
+.stats {
+  padding: 87px 100px 87px 130px;
+  background-color: $color-bazaar;
+}
+
+.stats__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 255px;
+}
+
+.stats__info {
+  text-align: center;
+}
+
+.stats__number {
+  font-size: 50px;
+  line-height: 62px;
+  color: $color-white;
+}
+
+.stats__text {
+  @include reset-indents;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $color-white;
+}

@@ -1,0 +1,19 @@
+.main-footer {
+  display: grid;
+  grid-template-columns: 183px 1fr 165px;
+  column-gap: 20px;
+  padding-top: 33px;
+  padding-bottom: 41px;
+}
+
+.main-footer__tel {
+  color: inherit;
+}
+
+.main-footer__entity {
+  @include reset-indents;
+}
+
+.main-footer__adress {
+  @include reset-indents;
+}

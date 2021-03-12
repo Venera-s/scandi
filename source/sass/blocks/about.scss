@@ -1,0 +1,30 @@
+.about {
+  padding: 65px 142px 21px 133px;
+}
+
+.about__title {
+  @include reset-indents;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__wrap {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 444px 1fr;
+  column-gap: 64px;
+}
+
+.about__photo {
+  width: 445px;
+  height: 465px;
+  background: url("../../img/about.jpg") 0 0 no-repeat;
+}
+
+.about__text {
+  @include reset-indents;
+  // width: 528px;
+}
