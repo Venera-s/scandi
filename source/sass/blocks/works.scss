@@ -1,3 +1,23 @@
-.works__title {
+.works {
+  padding: 65px 50px;
+}
 
+.works__title {
+  @include reset-indents;
+  padding-bottom: 40px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.works__photo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px 20px;
+}
+
+.works__img {
+  height: 451px;
+  object-fit: cover;
 }

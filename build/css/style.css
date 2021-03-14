@@ -312,14 +312,14 @@ template {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/montserrat-400.woff2") format("woff2"), url("../fonts/montserrat-400.woff") format("woff"); }
+  src: url("../fonts/montserrat400.woff2") format("woff2"), url("../fonts/montserrat400.woff") format("woff"); }
 
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/montserrat-500.woff2") format("woff2"), url("../fonts/montserrat-500.woff") format("woff"); }
+  src: url("../fonts/montserrat500.woff2") format("woff2"), url("../fonts/montserrat500.woff") format("woff"); }
 
 body {
   min-width: 320px;
@@ -501,15 +501,18 @@ html {
   padding: 0; }
 
 .stats {
-  padding: 87px 100px 87px 130px;
+  padding: 87px 0 87px 0;
   background-color: #8d7370; }
 
-.stats__wrap {
+.stats__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px 255px; }
+  gap: 30px 193px; }
 
-.stats__info {
+.stats__item {
   text-align: center; }
 
 .stats__number {
@@ -524,3 +527,28 @@ html {
   line-height: 37px;
   text-transform: uppercase;
   color: #ffffff; }
+
+.works {
+  padding: 65px 50px; }
+
+.works__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.works__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 21px 20px; }
+
+.works__img {
+  height: 451px;
+  -o-object-fit: cover;
+     object-fit: cover; }

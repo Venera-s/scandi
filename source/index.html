@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scandi - текстиль, мебель и аксессуары под ваш интерьер</title>
   <meta name="description" content="Scandi - подбираем текстиль, мебель и аксессуары под ваш интерьер">
-  <link rel="preload" href="fonts/montserrat-400.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat-500.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat500.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -51,23 +51,41 @@
       </div>
     </section>
     <section class="stats">
-      <div class="stats__wrap container">
-        <div class="stats__info">
+      <ul class="stats__list container">
+        <li class="stats__item">
           <span class="stats__number">5</span>
           <p class="stats__text">лет опыта</p>
-        </div>
-        <div class="stats__info">
+        </li>
+        <li class="stats__item">
           <span class="stats__number">100</span>
           <p class="stats__text">проектов</p>
-        </div>
-        <div class="stats__info">
+        </li>
+        <li class="stats__item">
           <span class="stats__number">10</span>
           <p class="stats__text">наград</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
-    <section class="works">
+    <section class="works container">
       <h2 class="works__title">Наши работы</h2>
+      <div class="works__photo">
+        <picture>
+          <source>
+          <img class="works__img" src="img/works-bedroom.jpg" alt="Спальня в квартире-студии">
+        </picture>
+        <picture>
+          <source>
+          <img class="works__img" src="img/works-kitchen.jpg" alt="Кухня в квартире-студии">
+        </picture>
+        <picture>
+          <source>
+          <img class="works__img" src="img/works-lounge.jpg" alt="Гостинная в квартире-студии">
+        </picture>
+        <picture>
+          <source media="">
+          <img class="works__img" src="img/works-bathroom.jpg" alt="Ванная в квартире-студии">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="main-footer container">
