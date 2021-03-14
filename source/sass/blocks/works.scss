@@ -11,13 +11,80 @@
   text-transform: uppercase;
 }
 
-.works__photo {
+.works__list {
+  @include reset-list;
   display: flex;
   flex-wrap: wrap;
   gap: 21px 20px;
+  padding-bottom: 40px;
+}
+
+.works__item {
+  position: relative;
+
+  &--flat:hover > .works__info--small {
+    display: block;
+  }
+
+  &--kitchen:hover > .works__info--large {
+    display: block;
+  }
+
+  &--lounge:hover > .works__info--large {
+    display: block;
+  }
+
+  &--bathroom:hover > .works__info--small {
+    display: block;
+  }
 }
 
 .works__img {
   height: 451px;
   object-fit: cover;
+}
+
+.works__info {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 451px;
+  padding: 35px;
+  padding-top: 86px;
+  background-color: rgba($color-congo-brown, 0.8);
+
+  &--small {
+    width: 488px;
+  }
+
+  &--large {
+    width: 692px;
+  }
+}
+
+.works__info-title {
+  @include reset-indents;
+  padding: 0 54px 19px;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 400;
+  text-align: center;
+  color: $color-white;
+}
+
+.works__info-text {
+  @include reset-indents;
+  color: $color-white;
+}
+
+.works__more {
+  display: block;
+  padding-right: 70px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: inherit;
 }

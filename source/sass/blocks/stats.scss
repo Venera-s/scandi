@@ -1,5 +1,6 @@
 .stats {
-  padding: 87px 0 87px 0;
+  padding-top: 87px;
+  padding-bottom: 81px;
   background-color: $color-bazaar;
 }
 
@@ -26,6 +27,7 @@
 
 .stats__text {
   @include reset-indents;
+  padding-top: 6px;
   font-size: 30px;
   line-height: 37px;
   text-transform: uppercase;

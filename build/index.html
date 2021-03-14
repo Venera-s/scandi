@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scandi - текстиль, мебель и аксессуары под ваш интерьер</title>
   <meta name="description" content="Scandi - подбираем текстиль, мебель и аксессуары под ваш интерьер">
-  <link rel="preload" href="fonts/montserrat400.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat500.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -68,24 +70,56 @@
     </section>
     <section class="works container">
       <h2 class="works__title">Наши работы</h2>
-      <div class="works__photo">
-        <picture>
-          <source>
-          <img class="works__img" src="img/works-bedroom.jpg" alt="Спальня в квартире-студии">
-        </picture>
-        <picture>
-          <source>
-          <img class="works__img" src="img/works-kitchen.jpg" alt="Кухня в квартире-студии">
-        </picture>
-        <picture>
-          <source>
-          <img class="works__img" src="img/works-lounge.jpg" alt="Гостинная в квартире-студии">
-        </picture>
-        <picture>
-          <source media="">
-          <img class="works__img" src="img/works-bathroom.jpg" alt="Ванная в квартире-студии">
-        </picture>
-      </div>
+      <ul class="works__list">
+        <li class="works__item works__item--flat">
+          <picture>
+            <source>
+            <img class="works__img" src="img/works-bedroom.jpg" alt="Квартира-студия - пример работы компании Scandi">
+          </picture>
+          <div class="works__info works__info--small">
+            <h3 class="works__info-title">Квартира-студия 30 кв.м.</h3>
+            <p class="works__info-text">В квартире были светлые стены и тёплые цвета. Мы концентрировались на отсылках к
+              природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+        </li>
+        <li class="works__item works__item--kitchen">
+          <picture>
+            <source>
+            <img class="works__img" src="img/works-kitchen.jpg" alt="Кухня - пример работы компании Scandi">
+          </picture>
+          <div class="works__info works__info--large">
+            <h3 class="works__info-title">Кухня</h3>
+            <p class="works__info-text">На кухне были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках
+              к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+        </li>
+        <li class="works__item works__item--lounge">
+          <picture>
+            <source>
+            <img class="works__img" src="img/works-lounge.jpg" alt="Гостинная - пример работы компании Scandi">
+          </picture>
+          <div class="works__info works__info--large">
+            <h3 class="works__info-title">Гостинная</h3>
+            <p class="works__info-text">В гостинной были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках
+              к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+        </li>
+        <li class="works__item works__item--bathroom">
+          <picture>
+            <source media="">
+            <img class="works__img" src="img/works-bathroom.jpg" alt="Ванная - пример работы компании Scandi">
+          </picture>
+          <div class="works__info works__info--small">
+            <h3 class="works__info-title">Ванная</h3>
+            <p class="works__info-text">В ванной были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках
+              к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+      </ul>
+      <a class="works__more" href="#">Смотреть ещё</a>
     </section>
   </main>
   <footer class="main-footer container">
