@@ -1,0 +1,80 @@
+.team {
+  padding: 49px 0 80px;
+  background-color: $color-dust-storm;
+}
+
+.team__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__title {
+  @include reset-indents;
+  padding-bottom: 43px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.team__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 38px;
+  padding-bottom: 36px;
+}
+
+.team__item {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.team__img {
+  width: 320px;
+  height: 249px;
+  object-fit: cover;
+}
+
+.team__about {
+  @include reset-indents;
+}
+
+.team__subtitle {
+  @include reset-indents;
+  padding-bottom: 40px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.team__process-list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(4, 285px);
+  gap: 30px 20px;
+  text-align: center;
+}
+
+.team__process-number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 21px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  background-color: $color-bazaar;
+  border-radius: 50%;
+
+}
+
+.team__process-about {
+  @include reset-indents;
+}
