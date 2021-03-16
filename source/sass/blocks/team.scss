@@ -9,21 +9,12 @@
   align-items: center;
 }
 
-.team__title {
-  @include reset-indents;
-  padding-bottom: 43px;
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .team__list {
   @include reset-list;
   display: grid;
   grid-template-columns: repeat(3, 320px);
   gap: 38px;
+  padding-top: 43px;
   padding-bottom: 36px;
 }
 
@@ -42,21 +33,12 @@
   @include reset-indents;
 }
 
-.team__subtitle {
-  @include reset-indents;
-  padding-bottom: 40px;
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .team__process-list {
   @include reset-list;
   display: grid;
   grid-template-columns: repeat(4, 285px);
   gap: 30px 20px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -72,7 +54,6 @@
   font-weight: 500;
   background-color: $color-bazaar;
   border-radius: 50%;
-
 }
 
 .team__process-about {

@@ -35,11 +35,21 @@
 }
 
 .main-header__nav-link {
+  @include transition-hover;
   display: inline-flex;
   padding: 15px 13px;
   font-size: 16px;
   line-height: 20px;
   color: inherit;
+
+  &:hover {
+    @include animation-tada;
+  }
+
+  &:active {
+    @include transition-hover(opacity);
+    opacity: 0.8;
+  }
 }
 
 .main-header__tel {
@@ -49,6 +59,15 @@
   font-size: 16px;
   line-height: 20px;
   color: inherit;
+
+  &:hover,
+  &:focus {
+    @include animation-tada;
+  }
+
+  &:active {
+    @include transition-hover;
+  }
 }
 
 .main-header__intro {
@@ -68,15 +87,4 @@
   @include reset-indents;
   padding-right: 30px;
   padding-bottom: 25px;
-}
-
-.main-header__bid {
-  display: inline-flex;
-  padding: 25px 65px;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 500;
-  text-align: center;
-  color: inherit;
-  background-color: $color-oriental-pink;
 }

@@ -1,0 +1,29 @@
+.bid {
+  width: 508px;
+}
+
+.bid__text {
+  @include reset-indents;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: rgba($color-white, 0.6);
+}
+
+.bid__input {
+  @include reset-indents;
+  width: 100%;
+  padding: 10px;
+  padding-left: 0;
+  background-color: $color-bazaar;
+  border: none;
+  border-bottom: 1px solid $color-white;
+  color: $color-rose-white;
+
+  &::placeholder {
+    color: $color-rose-white;
+  }
+}
+
+.bid__input-wrap {
+  margin-bottom: 31px;
+}

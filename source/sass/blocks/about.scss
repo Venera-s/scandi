@@ -2,15 +2,6 @@
   padding: 65px 140px 21px 133px;
 }
 
-.about__title {
-  @include reset-indents;
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .about__wrap {
   padding-top: 40px;
   display: grid;
@@ -26,5 +17,8 @@
 
 .about__text {
   @include reset-indents;
-  // width: 528px;
+
+  &:not(:last-child) {
+    padding-bottom: 30px;
+  }
 }

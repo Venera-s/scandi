@@ -8,3 +8,41 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin transition-hover($property: "") {
+  // opacity: 0.8;
+  transition: unquote($property) 0.5s ease-in-out;
+}
+
+@mixin animation-tada {
+  animation-name: tada;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  @keyframes tada {
+    0%,
+    100% {
+      transform: scale3d(1, 1, 1);
+      color: $color-white;
+      background-color: $color-oriental-pink;
+    }
+
+    10%,
+    20% {
+      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+  }
+}

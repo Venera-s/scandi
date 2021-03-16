@@ -36,20 +36,23 @@
         <h1 class="main-header__title">Поможем сделать вашу квартиру уютнее</h1>
         <p class="main-header__text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и
           помогаем организовать доставку</p>
-        <a class="main-header__bid" href="#">Оставить заявку</a>
+        <a class="main-header__bid btn-bid" href="#">Оставить заявку</a>
       </div>
     </div>
   </header>
   <main>
     <section class="about container">
-      <h2 class="about__title">О нас</h2>
+      <h2 class="title">О нас</h2>
       <div class="about__wrap">
         <div class="about__photo"></div>
-        <p class="about__text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива.
-          Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, что
-          по-настоящему вдохновляет дизайнеров нашей студии.<br><br>
-          Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
-          «Да! Это именно то, что действительно достойно моего дома!»</p>
+        <div class="about__text-wrap">
+          <p class="about__text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива.
+            Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,
+            что
+            по-настоящему вдохновляет дизайнеров нашей студии.</p>
+          <p class="about__text">Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
+            «Да! Это именно то, что действительно достойно моего дома!»</p>
+        </div>
       </div>
     </section>
     <section class="stats">
@@ -70,7 +73,7 @@
       </ul>
     </section>
     <section class="works container">
-      <h2 class="works__title">Наши работы</h2>
+      <h2 class="title title--left">Наши работы</h2>
       <ul class="works__list">
         <li class="works__item works__item--flat">
           <picture>
@@ -127,7 +130,7 @@
     <section class="team">
       <div class="container">
         <div class=" team__wrapper ">
-          <h2 class="team__title">Команда</h2>
+          <h2 class="title">Команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <picture>
@@ -161,7 +164,7 @@
                 как обсутроить дом так, чтобы вам понравилось.</p>
             </li>
           </ul>
-          <h3 class="team__subtitle">Как мы работаем</h3>
+          <h3 class="title">Как мы работаем</h3>
           <ul class="team__process-list">
             <li class="team__process-item">
               <span class="team__process-number">1</span>
@@ -188,17 +191,57 @@
       </div>
     </section>
     <section class="review container">
-      <h2 class="review__title">Отзывы</h2>
-      <div></div>
-      <div>
-        <picture>
-          <source>
-          <img src="" alt="">
-        </picture>
-        <picture>
-          <source>
-          <img src="" alt="">
-        </picture>
+      <h2 class="title">Отзывы</h2>
+      <div class="review__wrap">
+        <blockquote class="review__blockquote">
+          <p class="review__text">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для
+            украшения своего дома.
+          </p>
+          <p class="review__text">Работа шла быстро, было очень приятно общаться и взаимодествовайть
+            с сотрудниками. Не ожидала, что это будет так легко!
+          </p>
+          <p class="review__text">Буду советовать и своим друзьям к вам обращаться!»</p>
+          <cite class="review__user">Анна Беловская</cite>
+        </blockquote>
+        <div class="review__photo">
+          <picture>
+            <source>
+            <img class="review__img" src="img/review-img1.jpg" alt="">
+          </picture>
+          <picture>
+            <source>
+            <img class="review__img" src="img/review-img2.jpg" alt="">
+          </picture>
+        </div>
+        <div class="review__arrows">
+          <div class="review__arrows-left"></div>
+          <div class="review__arrows-right"></div>
+        </div>
+      </div>
+    </section>
+    <section class="application">
+      <div class="application__wrap container">
+        <div class="application__form-wrap bid">
+          <form class="application__from bid__form" action="https://echo.htmlacademy.ru" method="post">
+            <h2 class="title title--left title--color">Оставить заявку</h2>
+            <p class="bid__text">Оставьте свои контакты. Менеджер перезвонит
+              в удобное вам время и ответит на все вопросы.</p>
+            <div class="bid__input-wrap">
+              <input class="bid__input" type="text" required="required" placeholder="Ваше имя">
+            </div>
+            <div class="bid__input-wrap">
+              <input class="bid__input" type="tel" required="required" placeholder="Введите телефон">
+            </div>
+            <button class="btn-bid" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+        <div class="application__map">
+          <picture>
+            <source>
+            <!--TODO:добавить всем карточкам webp-->
+            <img class="application__img" src="img/map.jpg" alt="">
+          </picture>
+        </div>
       </div>
     </section>
   </main>

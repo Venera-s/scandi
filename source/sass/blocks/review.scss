@@ -1,0 +1,42 @@
+.review {
+  padding-top: 65px;
+  padding-bottom: 41px;
+}
+
+.review__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.review__blockquote {
+  @include reset-indents;
+  width: 407px;
+  margin-right: 20px;
+}
+
+.review__text {
+  @include reset-indents;
+
+  &:not(:last-of-type) {
+    padding-bottom: 35px;
+  }
+}
+
+.review__user {
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.review__photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 407px;
+}
+
+.review__img {
+  display: block;
+  padding-bottom: 24px;
+}

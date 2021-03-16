@@ -1,0 +1,17 @@
+.application {
+  background-color: $color-bazaar;
+}
+
+.application__wrap {
+  display: flex;
+  padding: 0 50px 0 132px;
+}
+
+.application__form-wrap {
+  margin-right: 20px;
+  padding-top: 50px;
+}
+
+.application__img {
+  display: block;
+}
