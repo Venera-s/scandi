@@ -6,16 +6,12 @@
 
 .stats__list {
   @include reset-list;
-  // display: flex;
-  // margin-right: -50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px 193px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px 75px;
 }
 
 .stats__item {
-  // width: calc(33% - 50px);
-  // margin-right: 50px;
   text-align: center;
 }
 

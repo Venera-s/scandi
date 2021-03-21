@@ -1,13 +1,14 @@
 .main-header {
   padding-top: 24px;
-  padding-bottom: 168px;
-  background: url("../../img/main-intro.jpg") 0 0 no-repeat;
+  padding-bottom: 166px;
+  background: url("../img/main-intro.jpg") 0 0 no-repeat;
   background-size: cover;
 }
 
 .main-header__wrap {
   display: grid;
-  grid-template-columns: 130px 1fr 145px;
+  grid-template-columns: 106px 1fr 171px;
+  align-items: flex-start;
   column-gap: 35px;
   padding-bottom: 78px;
 }
@@ -24,7 +25,7 @@
     left: 0;
     width: 50px;
     height: 50px;
-    background: url("../../img/lamp.png") no-repeat;
+    background: url("../img/lamp.png") no-repeat;
   }
 }
 
@@ -42,20 +43,20 @@
   line-height: 20px;
   color: inherit;
 
-  &:hover {
+  &:hover,
+  &:focus {
     @include animation-tada;
   }
 
   &:active {
     @include transition-hover(opacity);
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 
 .main-header__tel {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 10px;
   font-size: 16px;
   line-height: 20px;
   color: inherit;
@@ -66,7 +67,8 @@
   }
 
   &:active {
-    @include transition-hover;
+    @include transition-hover(opacity);
+    opacity: 0.3;
   }
 }
 
@@ -86,5 +88,5 @@
 .main-header__text {
   @include reset-indents;
   padding-right: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 }

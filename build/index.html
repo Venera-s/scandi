@@ -22,12 +22,12 @@
         </div>
         <nav>
           <ul class="main-header__nav-list">
-            <li><a class="main-header__nav-link" href="#">О компании</a></li>
-            <li><a class="main-header__nav-link" href="#">Портфолио</a></li>
-            <li><a class="main-header__nav-link" href="#">Команда</a></li>
-            <li><a class="main-header__nav-link" href="#">Как мы работаем</a></li>
-            <li><a class="main-header__nav-link" href="#">Отзывы клиентов</a></li>
-            <li><a class="main-header__nav-link" href="#">Оставить заявку</a></li>
+            <li><a class="main-header__nav-link" href="#about__id">О компании</a></li>
+            <li><a class="main-header__nav-link" href="#works__id">Портфолио</a></li>
+            <li><a class="main-header__nav-link" href="#team__id">Команда</a></li>
+            <li><a class="main-header__nav-link" href="#team__work-id">Как мы работаем</a></li>
+            <li><a class="main-header__nav-link" href="#review__id">Отзывы клиентов</a></li>
+            <li><a class="main-header__nav-link" href="#application__id">Оставить заявку</a></li>
           </ul>
         </nav>
         <a class="main-header__tel" href="tel:+79818574624">+7 (981) 857-46-24</a>
@@ -36,12 +36,12 @@
         <h1 class="main-header__title">Поможем сделать вашу квартиру уютнее</h1>
         <p class="main-header__text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и
           помогаем организовать доставку</p>
-        <a class="main-header__bid btn-bid" href="#">Оставить заявку</a>
+        <a class="main-header__bid btn-bid" href="#application__id">Оставить заявку</a>
       </div>
     </div>
   </header>
   <main>
-    <section class="about container">
+    <section class="about container" id="about__id">
       <h2 class="title">О нас</h2>
       <div class="about__wrap">
         <div class="about__photo"></div>
@@ -56,29 +56,31 @@
       </div>
     </section>
     <section class="stats">
-      <!--TODO: переделать сетку блока-->
-      <ul class="stats__list container">
-        <li class="stats__item">
-          <span class="stats__number">5</span>
-          <p class="stats__text">лет опыта</p>
-        </li>
-        <li class="stats__item">
-          <span class="stats__number">100</span>
-          <p class="stats__text">проектов</p>
-        </li>
-        <li class="stats__item">
-          <span class="stats__number">10</span>
-          <p class="stats__text">наград</p>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="stats__list">
+          <li class="stats__item">
+            <span class="stats__number">5</span>
+            <p class="stats__text">лет опыта</p>
+          </li>
+          <li class="stats__item">
+            <span class="stats__number">100</span>
+            <p class="stats__text">проектов</p>
+          </li>
+          <li class="stats__item">
+            <span class="stats__number">10</span>
+            <p class="stats__text">наград</p>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="works container">
+    <section class="works container" id="works__id">
       <h2 class="title title--left">Наши работы</h2>
       <ul class="works__list">
         <li class="works__item works__item--flat">
           <picture>
-            <source>
-            <img class="works__img" src="img/works-bedroom.jpg" alt="Квартира-студия - пример работы компании Scandi">
+            <source srcset="img/works-bedroom.webp, img/works-bedroom@2x.webp">
+            <img class="works__img" src="img/works-bedroom.jpg" srcset="img/works-bedroom@2x.jpg"
+              alt="Квартира-студия - пример работы компании Scandi">
           </picture>
           <div class="works__info works__info--small">
             <h3 class="works__info-title">Квартира-студия 30 кв.м.</h3>
@@ -86,12 +88,11 @@
               природе и сделали
               ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
           </div>
-        </li>
         <li class="works__item works__item--kitchen">
           <picture>
-            <source>
-            <!--TODO:добавить всем карточкам webp-->
-            <img class="works__img" src="img/works-kitchen.jpg" alt="Кухня - пример работы компании Scandi">
+            <source srcset="img/works-kitchen.webp, img/works-kitchen@2x.webp">
+            <img class="works__img" src="img/works-kitchen.jpg" srcset="img/works-kitchen@2x.jpg"
+              alt="Кухня - пример работы компании Scandi">
           </picture>
           <div class="works__info works__info--large">
             <h3 class="works__info-title">Кухня</h3>
@@ -103,7 +104,9 @@
         <li class="works__item works__item--lounge">
           <picture>
             <source>
-            <img class="works__img" src="img/works-lounge.jpg" alt="Гостинная - пример работы компании Scandi">
+            <source srcset="img/works-lounge.webp, img/works-lounge@2x.webp">
+            <img class="works__img" src="img/works-lounge.jpg" srcset="img/works-lounge@2x.jpg"
+              alt="Гостинная - пример работы компании Scandi">
           </picture>
           <div class="works__info works__info--large">
             <h3 class="works__info-title">Гостинная</h3>
@@ -114,8 +117,9 @@
         </li>
         <li class="works__item works__item--bathroom">
           <picture>
-            <source media="">
-            <img class="works__img" src="img/works-bathroom.jpg" alt="Ванная - пример работы компании Scandi">
+            <source srcset="img/works-bathroom.webp, img/works-bathroom@2x.webp">
+            <img class="works__img" src="img/works-bathroom.jpg" srcset="img/works-bathroom@2x.jpg"
+              alt="Ванная - пример работы компании Scandi">
           </picture>
           <div class="works__info works__info--small">
             <h3 class="works__info-title">Ванная</h3>
@@ -124,19 +128,24 @@
               ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
           </div>
       </ul>
-      <a class="works__more" href="#">Смотреть ещё</a>
-      <!--TODO: ДОбавить стрелку-->
+      <div class="works__more-wrap">
+        <a class="works__more" href="#">Смотреть ещё
+          <svg class="works__icon-arrow" width="61" height="16">
+            <use xlink:href="img/sprite.svg#icon-works-arrow"></use>
+          </svg>
+        </a>
+      </div>
     </section>
-    <section class="team">
+    <section class="team" id="team__id">
       <div class="container">
         <div class=" team__wrapper ">
           <h2 class="title">Команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <picture>
-                <source>
-                <!--TODO:добавить всем карточкам webp-->
-                <img class="team__img" src="img/mary-designer.jpg" alt="">
+                <source srcset="img/mary-designer.webp, img/mary-designer@2x.webp">
+                <img class="team__img" src="img/mary-designer.jpg" srcset="img/mary-designer@2x.jpg"
+                  alt="Маша - главный дизайнер Scandi">
               </picture>
               <p class="team__about">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам
                 домой,
@@ -145,8 +154,9 @@
             </li>
             <li class="team__item">
               <picture>
-                <source>
-                <img class="team__img" src="img/sasha-manager.jpg" alt="">
+                <source srcset="img/sasha-manager.webp, img/sasha-manager@2x.webp">
+                <img class="team__img" src="img/sasha-manager.jpg" srcset="img/sasha-manager@2x.jpg"
+                  alt="Саша - менеджер Scandi">
               </picture>
               <p class="team__about">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует
                 вас,
@@ -155,8 +165,9 @@
             </li>
             <li class="team__item">
               <picture>
-                <source>
-                <img class="team__img" src="img/katya-designer.jpg" alt="">
+                <source srcset="img/katya-designer.webp, img/katya-designer@2x.webp">
+                <img class="team__img" src="img/katya-designer.jpg" srcset="img/katya-designer@2x.jpg"
+                  alt="Катя - дизайнер Scandi">
               </picture>
               <p class="team__about">Катя тоже занимается дизайном.
                 Она всегда находит общий язык
@@ -164,7 +175,7 @@
                 как обсутроить дом так, чтобы вам понравилось.</p>
             </li>
           </ul>
-          <h3 class="title">Как мы работаем</h3>
+          <h3 class="title" id="team__work-id">Как мы работаем</h3>
           <ul class="team__process-list">
             <li class="team__process-item">
               <span class="team__process-number">1</span>
@@ -190,7 +201,7 @@
         </div>
       </div>
     </section>
-    <section class="review container">
+    <section class="review container" id="review__id">
       <h2 class="title">Отзывы</h2>
       <div class="review__wrap">
         <blockquote class="review__blockquote">
@@ -205,21 +216,31 @@
         </blockquote>
         <div class="review__photo">
           <picture>
-            <source>
-            <img class="review__img" src="img/review-img1.jpg" alt="">
+            <source srcset="img/review-lounge.webp, img/review-lounge@2x.webp">
+            <img class="review__img" src="img/review-lounge.jpg" srcset="img/review-lounge@2x.jpg"
+              alt="Гостинная клиентки Анны Беловской">
           </picture>
           <picture>
-            <source>
-            <img class="review__img" src="img/review-img2.jpg" alt="">
+            <source srcset="img/review-kitchen.webp, img/review-kitchen@2x.webp">
+            <img class="review__img" src="img/review-kitchen.jpg" srcset="img/review-kitchen@2x.jpg"
+              alt="Кухня клиентки Анны Беловской">
           </picture>
         </div>
-        <div class="review__arrows">
-          <div class="review__arrows-left"></div>
-          <div class="review__arrows-right"></div>
+        <div class="review__btn-arrows">
+          <button class="review__btn-arrow review__btn-arrow--left">
+            <svg class="review__icon-arrow review__icon-arrow--left" width="33" height="16">
+              <use xlink:href="img/sprite.svg#icon-review-arrow"></use>
+            </svg>
+          </button>
+          <button class="review__btn-arrow review__btn-arrow--right">
+            <svg class="review__icon-arrow review__icon-arrow--right" width="33" height="16">
+              <use xlink:href="img/sprite.svg#icon-review-arrow"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
-    <section class="application">
+    <section class="application" id="application__id">
       <div class="application__wrap container">
         <div class="application__form-wrap bid">
           <form class="application__from bid__form" action="https://echo.htmlacademy.ru" method="post">
@@ -227,19 +248,23 @@
             <p class="bid__text">Оставьте свои контакты. Менеджер перезвонит
               в удобное вам время и ответит на все вопросы.</p>
             <div class="bid__input-wrap">
-              <input class="bid__input" type="text" required="required" placeholder="Ваше имя">
+              <label class="visually-hidden" for="name-field">Ваше имя</label>
+              <input class="bid__input" type="text" name="name" id="name-field" required="required"
+                placeholder="Ваше имя">
             </div>
             <div class="bid__input-wrap">
-              <input class="bid__input" type="tel" required="required" placeholder="Введите телефон">
+              <label class="visually-hidden" for="tel-field">Введите телефон</label>
+              <input class="bid__input" type="tel" name="tel" id="tel-field" required="required"
+                placeholder="Введите телефон">
             </div>
             <button class="btn-bid" type="submit">Оставить заявку</button>
           </form>
         </div>
         <div class="application__map">
           <picture>
-            <source>
-            <!--TODO:добавить всем карточкам webp-->
-            <img class="application__img" src="img/map.jpg" alt="">
+            <source srcset="img/map.webp, img/map@2x.webp">
+            <img class="application__img" src="img/map.jpg" srcset="img/map@2x.jpg"
+              alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </picture>
         </div>
       </div>
@@ -250,6 +275,8 @@
     <p class="main-footer__adress">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
     <p class="main-footer__entity">ИП Королёва А.А.</p>
   </footer>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

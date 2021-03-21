@@ -14,13 +14,8 @@
   display: grid;
   grid-template-columns: repeat(3, 320px);
   gap: 38px;
-  padding-top: 43px;
-  padding-bottom: 36px;
-}
-
-.team__item {
-  width: 320px;
-  margin: 0 auto;
+  padding-top: 46px;
+  padding-bottom: 40px;
 }
 
 .team__img {
@@ -38,7 +33,7 @@
   display: grid;
   grid-template-columns: repeat(4, 285px);
   gap: 30px 20px;
-  padding-top: 40px;
+  padding-top: 34px;
   text-align: center;
 }
 

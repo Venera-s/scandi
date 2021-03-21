@@ -2,18 +2,32 @@
   display: grid;
   grid-template-columns: 183px 1fr 167px;
   column-gap: 20px;
-  padding-top: 33px;
-  padding-bottom: 41px;
+  padding-top: 23px;
+  padding-bottom: 31px;
 }
 
 .main-footer__tel {
+  display: inline-flex;
+  padding: 10px;
   color: inherit;
+
+  &:hover,
+  &:focus {
+    @include animation-tada;
+  }
+
+  &:active {
+    @include transition-hover(opacity);
+    opacity: 0.7;
+  }
 }
 
 .main-footer__entity {
   @include reset-indents;
+  padding-top: 10px;
 }
 
 .main-footer__adress {
   @include reset-indents;
+  padding-top: 10px;
 }

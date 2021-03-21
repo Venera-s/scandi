@@ -1,5 +1,5 @@
 .works {
-  padding: 65px 50px;
+  padding: 65px 50px 54px;
 }
 
 .works__list {
@@ -8,11 +8,16 @@
   flex-wrap: wrap;
   gap: 21px 20px;
   padding-top: 40px;
-  padding-bottom: 32px;
+  padding-bottom: 22px;
 }
 
 .works__item {
+  transition: 0.5s ease-in-out;
   position: relative;
+
+  &:hover {
+    transition: 0.5s ease-in-out;
+  }
 
   &--flat:hover > .works__info--small {
     display: block;
@@ -38,7 +43,6 @@
 
 .works__info {
   display: none;
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -71,12 +75,42 @@
   color: $color-white;
 }
 
+.works__more-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 .works__more {
-  display: block;
-  padding-right: 70px;
+  @include transition-hover;
+  position: relative;
+  padding: 10px;
+  padding-right: 80px;
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
   text-align: center;
   color: inherit;
+
+  .works__icon-arrow {
+    position: absolute;
+    top: 20px;
+    right: 9px;
+    fill: $color-cab-sav;
+  }
+
+  &:hover,
+  &:focus {
+    @include animation-tada;
+  }
+
+  &:active {
+    @include transition-hover(opacity);
+    opacity: 0.7;
+  }
+}
+
+.works__more:hover > .works__icon-arrow,
+.works__more:focus > .works__icon-arrow,
+.works__more:active > .works__icon-arrow {
+  fill: $color-white;
 }

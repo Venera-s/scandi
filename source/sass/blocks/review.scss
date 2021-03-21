@@ -4,6 +4,7 @@
 }
 
 .review__wrap {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,10 +19,7 @@
 
 .review__text {
   @include reset-indents;
-
-  &:not(:last-of-type) {
-    padding-bottom: 35px;
-  }
+  padding-bottom: 30px;
 }
 
 .review__user {
@@ -39,4 +37,40 @@
 .review__img {
   display: block;
   padding-bottom: 24px;
+}
+
+.review__btn-arrow {
+  @include reset-indents;
+  position: absolute;
+  top: 277px;
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-oriental-pink;
+
+  &--right {
+    right: 82px;
+  }
+
+  &--left {
+    left: 82px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.review__icon-arrow {
+  fill: $color-romance;
+
+  &--left {
+    transform: rotate(180deg);
+  }
 }
