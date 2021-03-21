@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scandi - текстиль, мебель и аксессуары под ваш интерьер</title>
+  <meta name="description" content="Scandi - подбираем текстиль, мебель и аксессуары под ваш интерьер">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header__wrap">
+        <div class="main-header__logo">
+          <img src="img/logo.svg" width="65" height="20" alt="Логотип компании Scandi">
+        </div>
+        <nav>
+          <ul class="main-header__nav-list">
+            <li><a class="main-header__nav-link" href="#about__id">О компании</a></li>
+            <li><a class="main-header__nav-link" href="#works__id">Портфолио</a></li>
+            <li><a class="main-header__nav-link" href="#team__id">Команда</a></li>
+            <li><a class="main-header__nav-link" href="#team__work-id">Как мы работаем</a></li>
+            <li><a class="main-header__nav-link" href="#review__id">Отзывы клиентов</a></li>
+            <li><a class="main-header__nav-link" href="#application__id">Оставить заявку</a></li>
+          </ul>
+        </nav>
+        <a class="main-header__tel" href="tel:+79818574624">+7 (981) 857-46-24</a>
+      </div>
+      <div class="main-header__intro">
+        <h1 class="main-header__title">Поможем сделать вашу квартиру уютнее</h1>
+        <p class="main-header__text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и
+          помогаем организовать доставку</p>
+        <a class="main-header__bid btn-bid" href="#application__id">Оставить заявку</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about container" id="about__id">
+      <h2 class="title">О нас</h2>
+      <div class="about__wrap">
+        <div class="about__photo"></div>
+        <div class="about__text-wrap">
+          <p class="about__text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива.
+            Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,
+            что
+            по-настоящему вдохновляет дизайнеров нашей студии.</p>
+          <p class="about__text">Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
+            «Да! Это именно то, что действительно достойно моего дома!»</p>
+        </div>
+      </div>
+    </section>
+    <section class="stats">
+      <h2 class="visually-hidden">Преимущества Scandi</h2>
+      <div class="container">
+        <ul class="stats__list">
+          <li class="stats__item">
+            <span class="stats__number">5</span>
+            <p class="stats__text">лет опыта</p>
+          </li>
+          <li class="stats__item">
+            <span class="stats__number">100</span>
+            <p class="stats__text">проектов</p>
+          </li>
+          <li class="stats__item">
+            <span class="stats__number">10</span>
+            <p class="stats__text">наград</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="works container" id="works__id">
+      <h2 class="title title--left">Наши работы</h2>
+      <ul class="works__list">
+        <li class="works__item works__item--flat">
+          <picture>
+            <source type="image/webp" srcset="img/works-bedroom.webp 1x, img/works-bedroom@2x.webp 2x">
+            <img class="works__img" src="img/works-bedroom.jpg" srcset="img/works-bedroom@2x.jpg 2x"
+              alt="Квартира-студия - пример работы компании Scandi">
+          </picture>
+          <div class="works__info works__info--small">
+            <h3 class="works__info-title">Квартира-студия 30 кв.м.</h3>
+            <p class="works__info-text">В квартире были светлые стены и тёплые цвета. Мы концентрировались на отсылках к
+              природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+        <li class="works__item works__item--kitchen">
+          <picture>
+            <source type="image/webp" srcset="img/works-kitchen.webp 1x, img/works-kitchen@2x.webp 2x">
+            <img class="works__img" src="img/works-kitchen.jpg" srcset="img/works-kitchen@2x.jpg 2x"
+              alt="Кухня - пример работы компании Scandi">
+          </picture>
+          <div class="works__info works__info--large">
+            <h3 class="works__info-title">Кухня</h3>
+            <p class="works__info-text">На кухне были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках
+              к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+        </li>
+        <li class="works__item works__item--lounge">
+          <picture>
+            <source type="image/webp" srcset="img/works-lounge.webp 1x, img/works-lounge@2x.webp 2x">
+            <img class="works__img" src="img/works-lounge.jpg" srcset="img/works-lounge@2x.jpg 2x"
+              alt="Гостинная - пример работы компании Scandi">
+          </picture>
+          <div class="works__info works__info--large">
+            <h3 class="works__info-title">Гостинная</h3>
+            <p class="works__info-text">В гостинной были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках
+              к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+        </li>
+        <li class="works__item works__item--bathroom">
+          <picture>
+            <source type="image/webp" srcset="img/works-bathroom.webp 1x, img/works-bathroom@2x.webp 2x">
+            <img class="works__img" src="img/works-bathroom.jpg" srcset="img/works-bathroom@2x.jpg 2x"
+              alt="Ванная - пример работы компании Scandi">
+          </picture>
+          <div class="works__info works__info--small">
+            <h3 class="works__info-title">Ванная</h3>
+            <p class="works__info-text">В ванной были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках
+              к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+      </ul>
+      <div class="works__more-wrap">
+        <a class="works__more" href="#">Смотреть ещё
+          <svg class="works__icon-arrow" width="61" height="16">
+            <use xlink:href="img/sprite.svg#icon-works-arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="team" id="team__id">
+      <div class="container">
+        <div class=" team__wrapper ">
+          <h2 class="title">Команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <picture>
+                <source type="image/webp" srcset="img/mary-designer.webp 1x, img/mary-designer@2x.webp 2x">
+                <img class="team__img" src="img/mary-designer.jpg" srcset="img/mary-designer@2x.jpg 2x"
+                  alt="Маша - главный дизайнер Scandi">
+              </picture>
+              <p class="team__about">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам
+                домой,
+                общается
+                и помогает сделать вашу квартиру красивой и уютной.</p>
+            </li>
+            <li class="team__item">
+              <picture>
+                <source type="image/webp" srcset="img/sasha-manager.webp 1x, img/sasha-manager@2x.webp 2x">
+                <img class="team__img" src="img/sasha-manager.jpg" srcset="img/sasha-manager@2x.jpg 2x"
+                  alt="Саша - менеджер Scandi">
+              </picture>
+              <p class="team__about">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует
+                вас,
+                соберёт все документы
+                и ответит на все вопросы.</p>
+            </li>
+            <li class="team__item">
+              <picture>
+                <source type="image/webp" srcset="img/katya-designer.webp 1x, img/katya-designer@2x.webp 2x">
+                <img class="team__img" src="img/katya-designer.jpg" srcset="img/katya-designer@2x.jpg 2x"
+                  alt="Катя - дизайнер Scandi">
+              </picture>
+              <p class="team__about">Катя тоже занимается дизайном.
+                Она всегда находит общий язык
+                с клиентами и точно знает,
+                как обсутроить дом так, чтобы вам понравилось.</p>
+            </li>
+          </ul>
+          <h3 class="title" id="team__work-id">Как мы работаем</h3>
+          <ul class="team__process-list">
+            <li class="team__process-item">
+              <span class="team__process-number">1</span>
+              <p class="team__process-about">Знакомимся, выезжаем
+                на объект, утверждаем концепцию, подписывем договор.</p>
+            </li>
+            <li class="team__process-item">
+              <span class="team__process-number">2</span>
+              <p class="team__process-about">Подбираем мебель, текстиль, аксессуры. Делаем 3D-
+                зуализацию.</p>
+            </li>
+            <li class="team__process-item">
+              <span class="team__process-number">3</span>
+              <p class="team__process-about">Находим нужные магазины, помогаем с доставкой
+                и оплатой товаров.</p>
+            </li>
+            <li class="team__process-item">
+              <span class="team__process-number">4</span>
+              <p class="team__process-about">Воплощаем проект в жизнь:
+                расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="review container" id="review__id">
+      <h2 class="title">Отзывы</h2>
+      <div class="review__wrap">
+        <blockquote class="review__blockquote">
+          <p class="review__text">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для
+            украшения своего дома.
+          </p>
+          <p class="review__text">Работа шла быстро, было очень приятно общаться и взаимодествовайть
+            с сотрудниками. Не ожидала, что это будет так легко!
+          </p>
+          <p class="review__text">Буду советовать и своим друзьям к вам обращаться!»</p>
+          <cite class="review__user">Анна Беловская</cite>
+        </blockquote>
+        <div class="review__photo">
+          <picture>
+            <source type="image/webp" srcset="img/review-lounge.webp 1x, img/review-lounge@2x.webp 2x">
+            <img class="review__img" src="img/review-lounge.jpg" srcset="img/review-lounge@2x.jpg 2x"
+              alt="Гостинная клиентки Анны Беловской">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/review-kitchen.webp 1x, img/review-kitchen@2x.webp 2x">
+            <img class="review__img" src="img/review-kitchen.jpg" srcset="img/review-kitchen@2x.jpg 2x"
+              alt="Кухня клиентки Анны Беловской">
+          </picture>
+        </div>
+        <div class="review__btn-arrows">
+          <button class="review__btn-arrow review__btn-arrow--left">
+            <svg class="review__icon-arrow review__icon-arrow--left" width="33" height="16">
+              <use xlink:href="img/sprite.svg#icon-review-arrow"></use>
+            </svg>
+          </button>
+          <button class="review__btn-arrow review__btn-arrow--right">
+            <svg class="review__icon-arrow review__icon-arrow--right" width="33" height="16">
+              <use xlink:href="img/sprite.svg#icon-review-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="application" id="application__id">
+      <div class="application__wrap container">
+        <div class="application__form-wrap bid">
+          <form class="application__from bid__form" action="https://echo.htmlacademy.ru" method="post">
+            <h2 class="title title--left title--color">Оставить заявку</h2>
+            <p class="bid__text">Оставьте свои контакты. Менеджер перезвонит
+              в удобное вам время и ответит на все вопросы.</p>
+            <div class="bid__input-wrap">
+              <label class="visually-hidden" for="name-field">Ваше имя</label>
+              <input class="bid__input" type="text" name="name" id="name-field" required="required"
+                placeholder="Ваше имя">
+            </div>
+            <div class="bid__input-wrap">
+              <label class="visually-hidden" for="tel-field">Введите телефон</label>
+              <input class="bid__input" type="tel" name="tel" id="tel-field" required="required"
+                placeholder="Введите телефон">
+            </div>
+            <button class="btn-bid" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+        <div class="application__map">
+          <picture>
+            <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+            <img class="application__img" src="img/map.jpg" srcset="img/map@2x.jpg 2x"
+              alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer container">
+    <a class="main-footer__tel" href="tel:+79818574624">+7 (981) 857-46-24</a>
+    <p class="main-footer__adress">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+    <p class="main-footer__entity">ИП Королёва А.А.</p>
+  </footer>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

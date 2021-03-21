@@ -12,26 +12,9 @@
 }
 
 .works__item {
-  transition: 0.5s ease-in-out;
   position: relative;
 
-  &:hover {
-    transition: 0.5s ease-in-out;
-  }
-
-  &--flat:hover > .works__info--small {
-    display: block;
-  }
-
-  &--kitchen:hover > .works__info--large {
-    display: block;
-  }
-
-  &--lounge:hover > .works__info--large {
-    display: block;
-  }
-
-  &--bathroom:hover > .works__info--small {
+  &:hover > .works__info {
     display: block;
   }
 }
